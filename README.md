@@ -143,7 +143,7 @@ npm run dev
 
 ## 🌍 Live Website
 
-Netlify deployment https://sarahgikandi051.netlify.app/projects
+Netlify deploymenthttps://sarahgikandi051.netlify.app/
 
 
 ## 🤍 Final Note
