@@ -119,8 +119,7 @@ Color palette includes:
 Clone the repository:
 
 ```bash
-git 
-# https://github.com/SarahGikandi/sarah-being
+git https://github.com/SarahGikandi/sarah-being
 ```
 
 Navigate into the project folder:
@@ -145,7 +144,7 @@ npm run dev
 ## 🌍 Live Website
 
 Netlify deployment
-# https://sarahgikandi051.netlify.app/projects
+# https://sarahgikandi051.netlify.app/
 
 
 ## 🤍 Final Note
