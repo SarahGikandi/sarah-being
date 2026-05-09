@@ -1,0 +1,131 @@
+.academics-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.academics-header h1 {
+    font-size: 3rem;
+    color: var(--color-text-main);
+    margin-bottom: 0.5rem;
+}
+
+.reflection-block {
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.reflection-content {
+    background-color: var(--color-soft-pink);
+    padding: 3rem;
+    border-radius: var(--radius-lg);
+    max-width: 800px;
+    text-align: center;
+    color: var(--color-dark-brown);
+    position: relative;
+    box-shadow: var(--shadow-soft);
+}
+
+.reflection-icon {
+    margin-bottom: 1rem;
+    color: var(--color-dark-brown);
+    opacity: 0.8;
+}
+
+.reflection-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-family: var(--font-heading);
+}
+
+.reflection-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    font-style: italic;
+    font-family: var(--font-heading);
+}
+
+.subjects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    max-width: 800px;
+    margin: 0 auto 5rem;
+}
+
+.subject-card {
+    background: var(--color-bg-card);
+    border-radius: var(--radius-md);
+    padding: 2.5rem;
+    box-shadow: 0 4px 20px rgba(158, 132, 132, 0.08);
+    border: 1px solid rgba(158, 132, 132, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.subject-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-soft);
+}
+
+.subject-header h2 {
+    font-size: 2rem;
+    color: var(--color-light-brown);
+    margin-bottom: 2rem;
+    border-bottom: 1px dashed rgba(158, 132, 132, 0.4);
+    padding-bottom: 1rem;
+}
+
+.subject-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.detail-item h4 {
+    font-size: 1rem;
+    font-family: var(--font-body);
+    color: var(--color-text-main);
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+}
+
+.detail-item h4 svg {
+    color: var(--color-muted-purple);
+}
+
+.detail-item p {
+    color: var(--color-text-muted);
+    line-height: 1.6;
+    padding-left: 1.8rem;
+}
+
+.study-tips {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tips-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.tips-list li {
+    background: var(--color-bg-card);
+    padding: 1.5rem 2rem;
+    border-radius: var(--radius-md);
+    color: var(--color-text-main);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 4px 15px rgba(158, 132, 132, 0.05);
+}
+
+.tips-list li strong {
+    font-family: var(--font-heading);
+    color: var(--color-light-brown);
+    font-size: 1.5rem;
+}

@@ -1,0 +1,137 @@
+.poetry-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.poetry-header h1 {
+    font-size: 3rem;
+    color: var(--color-text-main);
+    margin-bottom: 1rem;
+}
+
+.poetry-header .subtitle {
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.featured-poem-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.featured-poem-card {
+    background: radial-gradient(circle at center, rgba(232, 207, 207, 0.4), transparent);
+    padding: 4rem;
+    border-radius: var(--radius-lg);
+    text-align: center;
+    max-width: 600px;
+}
+
+.featured-poem-card h2 {
+    font-size: 2.2rem;
+    color: var(--color-light-brown);
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.featured-poem-card .poem-text {
+    font-size: 1.4rem;
+    line-height: 2.2;
+}
+
+.poetry-filters {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.poetry-filters .filter-btn {
+    padding: 0.5rem 1.2rem;
+    border-radius: var(--radius-full);
+    background: transparent;
+    color: var(--color-text-muted);
+    border: 1px solid rgba(158, 132, 132, 0.3);
+    font-family: var(--font-body);
+    transition: all 0.3s ease;
+}
+
+.poetry-filters .filter-btn:hover,
+.poetry-filters .filter-btn.active {
+    background: var(--color-light-brown);
+    color: var(--color-cream);
+    border-color: var(--color-light-brown);
+}
+
+.poetry-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 3rem;
+}
+
+.poem-card {
+    background: var(--color-bg-card);
+    padding: 3rem 2rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-soft);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.poem-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--color-soft-pink);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.poem-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.poem-card:hover::before {
+    opacity: 1;
+}
+
+.poem-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    font-size: 0.85rem;
+    font-family: var(--font-body);
+}
+
+.poem-category {
+    color: var(--color-light-brown);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.poem-date {
+    color: #a49696;
+}
+
+.poem-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-text-main);
+}
+
+.format-poem {
+    font-family: var(--font-heading);
+    font-style: italic;
+    white-space: pre-wrap;
+    color: var(--color-text-main);
+    line-height: 2;
+    font-size: 1.15rem;
+}

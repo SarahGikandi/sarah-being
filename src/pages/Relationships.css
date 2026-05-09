@@ -1,0 +1,269 @@
+.relationships-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.header-icon {
+    color: var(--color-light-brown);
+    margin-bottom: 1rem;
+}
+
+.relationships-header h1 {
+    font-size: 3rem;
+    color: var(--color-text-main);
+    margin-bottom: 0.5rem;
+}
+
+.content-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.rel-section {
+    background: var(--color-bg-card);
+    padding: 3rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-soft);
+    margin-bottom: 3rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.rel-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--color-muted-purple);
+}
+
+.rel-section.my-view::before {
+    background: var(--color-soft-pink);
+}
+
+.rel-section.rel-status {
+    text-align: center;
+    background: transparent;
+    box-shadow: none;
+    padding: 2rem 0;
+}
+
+.rel-section.rel-status::before {
+    display: none;
+}
+
+.status-highlight {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: var(--color-light-brown);
+    color: var(--color-bg-main);
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    border-radius: var(--radius-full);
+    margin-top: 1rem;
+    box-shadow: var(--shadow-soft);
+}
+
+.rel-section h2 {
+    font-size: 2rem;
+    color: var(--color-light-brown);
+    margin-bottom: 1.5rem;
+}
+
+.rel-section h3 {
+    font-size: 1.2rem;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.rel-section.my-view p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--color-text-main);
+}
+
+.lessons-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.lessons-list li {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.bullet {
+    min-width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--color-light-brown);
+    margin-top: 0.5rem;
+}
+
+.lessons-list p {
+    color: var(--color-text-main);
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.letter-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    padding: 2rem 0;
+}
+
+.letter-paper {
+    background-color: #e3dddd;
+    padding: 4rem 3rem;
+    max-width: 600px;
+    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.05);
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.15rem;
+    line-height: 2;
+    color: #3e3232;
+    background-image: repeating-linear-gradient(transparent, transparent 31px, rgba(158, 132, 132, 0.1) 31px, rgba(158, 132, 132, 0.1) 32px);
+    position: relative;
+}
+
+.letter-paper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 30px;
+    bottom: 0;
+    width: 2px;
+    background: rgba(220, 163, 163, 0.4);
+}
+
+.letter-paper p {
+    margin-bottom: 1.5rem;
+}
+
+.lock-screen-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.blur-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(42, 37, 37, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.lock-card {
+    position: relative;
+    background: var(--color-bg-card);
+    padding: 3.5rem 2.5rem;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    z-index: 1001;
+}
+
+.lock-icon-container {
+    background: var(--color-bg-main);
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    color: var(--color-light-brown);
+}
+
+.lock-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-text-main);
+}
+
+.lock-subtitle {
+    color: var(--color-text-muted);
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+.lock-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.lock-form input {
+    padding: 1rem 1.2rem;
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(158, 132, 132, 0.2);
+    background: var(--color-bg-main);
+    color: var(--color-text-main);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.lock-form input:focus {
+    outline: none;
+    border-color: var(--color-light-brown);
+    box-shadow: 0 0 0 3px rgba(158, 132, 132, 0.1);
+}
+
+.lock-form input.input-error {
+    border-color: #e57373;
+}
+
+.error-message {
+    color: #e57373;
+    font-size: 0.9rem;
+    margin: -1rem 0 0.5rem;
+}
+
+.unlock-btn {
+    padding: 1rem;
+    background: var(--color-text-main);
+    color: var(--color-light-brown);
+    border-radius: var(--radius-md);
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(62, 50, 50, 0.2);
+}
+
+.unlock-btn:hover {
+    background: var(--color-light-brown);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(158, 132, 132, 0.3);
+}
+
+.unlock-btn:active {
+    transform: translateY(0);
+}
+
+/* Ensure content is hidden scroll-wise when locked */
+.relationships-page:has(.lock-screen-wrapper) {
+    overflow: hidden;
+    height: 100vh;
+}
